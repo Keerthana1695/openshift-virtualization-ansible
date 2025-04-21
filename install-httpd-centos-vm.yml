@@ -92,7 +92,7 @@
           Accept: "application/vnd.github+json"
         body: |
           {
-            "body": "👋 Thanks for creating this issue! your namespace {{ ansible_eda.event.payload.issue.body }} is now created!!!."
+            "body": "👋 Thanks for creating this issue! your VM {{ ansible_eda.event.payload.issue.body }} is now created!!!."
           }
         body_format: json
         status_code: 201
