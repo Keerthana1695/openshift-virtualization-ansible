@@ -83,7 +83,7 @@
         state: present
         template: route.yml.j2
 
-        - name: Post a comment on the GitHub issue
+    - name: Post a comment on the GitHub issue
       uri:
         url: "https://api.github.com/repos/{{ repo_owner }}/{{ repo_name }}/issues/{{ issue_number }}/comments"
         method: POST
